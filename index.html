@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060918">
+  <meta name="description" content="程序员之家社团招新展示站——代码、技术、分享、成长。">
+  <title>程序员之家｜2026 招新</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <canvas id="signal-field" aria-hidden="true"></canvas>
+  <div class="code-backdrop" aria-hidden="true">
+    <pre class="code-fragment code-fragment-a"><span>#include</span> &lt;future&gt;
+
+int main() {
+  auto idea = imagine();
+  return <b>build</b>(idea);
+}</pre>
+    <pre class="code-fragment code-fragment-b"><span>def</span> grow(curiosity):
+    skill = practice ** time
+    <b>return</b> skill + team</pre>
+    <pre class="code-fragment code-fragment-c">git switch -c <b>future</b>
+git add .
+git commit -m "ship it"</pre>
+    <pre class="code-fragment code-fragment-d"><span>while</span> (curious) {
+  learn();
+  share();
+  create();
+}</pre>
+    <pre class="code-fragment code-fragment-e">const tomorrow = {
+  courage: <b>true</b>,
+  teammate: "you"
+};</pre>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="程序员之家首页">
+      <img src="assets/logo.webp" alt="" width="42" height="42">
+      <span>程序员之家</span>
+      <i>DEV.HOME</i>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#strength">实力</a>
+      <a href="#tracks">方向</a>
+      <a href="#gallery">荣誉</a>
+      <a href="#join">加入</a>
+    </nav>
+    <button class="screen-button" id="screen-button" type="button" aria-label="进入全屏演示">
+      <span class="screen-icon" aria-hidden="true"></span>
+      全屏演示 <kbd>F</kbd>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span></span> 2026 / NEW MEMBER INIT</div>
+        <h1 class="reveal">
+          <span>把热爱</span>
+          <strong data-text="编译成未来">编译成未来</strong>
+        </h1>
+        <p class="hero-lead reveal">这里有写下第一行代码的耐心，也有把作品带上领奖台的野心。</p>
+        <ul class="hero-tags reveal" aria-label="社团特点">
+          <li>零基础可加入</li>
+          <li>竞赛训练</li>
+          <li>项目实战</li>
+          <li>技术分享</li>
+        </ul>
+      </div>
+
+      <div class="hero-console reveal" aria-label="程序员之家终端演示">
+        <div class="console-bar">
+          <span></span><span></span><span></span>
+          <p>devhome://recruit/2026</p>
+          <b>LIVE</b>
+        </div>
+        <div class="console-body">
+          <div class="console-row muted">$ ./start_your_future.sh</div>
+          <div class="console-row"><em>✓</em> 社团档案载入完成</div>
+          <div class="console-row"><em>✓</em> 学长学姐在线</div>
+          <div class="console-row"><em>✓</em> 成长路线已就绪</div>
+          <div class="console-output">
+            <small>正在寻找</small>
+            <strong id="type-line">敢把想法做出来的人</strong><span class="cursor">_</span>
+          </div>
+          <div class="code-orbit" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <div class="core-mark">&lt;/&gt;</div>
+            <i class="node node-a"></i>
+            <i class="node node-b"></i>
+            <i class="node node-c"></i>
+          </div>
+        </div>
+        <div class="console-foot">
+          <span><i></i> SYSTEM ONLINE</span>
+          <span>PRESS F FOR FULLSCREEN</span>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="strength section" id="strength">
+      <div class="section-heading reveal">
+        <p>实力记录 / PROOF OF WORK</p>
+        <h2>让结果替我们<br>完成自我介绍。</h2>
+      </div>
+      <div class="metric-grid">
+        <article class="metric metric-main reveal">
+          <span class="metric-label">成立于</span>
+          <div class="metric-value"><b data-count="2006">2006</b><small>年</small></div>
+          <p>二十年传承。每一届成员都把经验写进下一届的起点。</p>
+        </article>
+        <article class="metric reveal">
+          <span class="metric-label">近三年蓝桥杯省级奖项</span>
+          <div class="metric-value"><b data-count="39">39</b><small>项</small></div>
+          <p>一等奖 3 项 · 二等奖 17 项 · 三等奖 19 项</p>
+        </article>
+        <article class="metric reveal">
+          <span class="metric-label">竞赛版图</span>
+          <div class="metric-value text-value"><b>全国赛场</b></div>
+          <p>计算机设计、蓝桥杯、数学建模等赛道持续突破。</p>
+        </article>
+        <article class="metric metric-photo reveal">
+          <img src="assets/team.webp" alt="程序员之家社团成员合影" loading="lazy">
+          <div><span>我们一起写代码</span><b>也一起赢</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tracks section" id="tracks">
+      <div class="section-heading compact reveal">
+        <p>成长路线 / YOUR PATH</p>
+        <h2>你带着好奇来，<br>带着作品走。</h2>
+      </div>
+      <div class="track-stack">
+        <article class="track-card reveal" data-symbol="01">
+          <div class="track-icon">{ }</div>
+          <div>
+            <span>基础训练营</span>
+            <h3>从“看懂”到“写出”</h3>
+            <p>C 语言、数据结构、算法基础。有人带、有反馈，第一次写代码也能跟上。</p>
+          </div>
+          <b>C / DS / ALGO</b>
+        </article>
+        <article class="track-card reveal" data-symbol="02">
+          <div class="track-icon">⌁</div>
+          <div>
+            <span>竞赛突围</span>
+            <h3>把训练变成成绩</h3>
+            <p>真题拆解、组队训练、经验复盘，向蓝桥杯、计算机设计大赛等赛场进发。</p>
+          </div>
+          <b>TRAIN / TEAM / WIN</b>
+        </article>
+        <article class="track-card reveal" data-symbol="03">
+          <div class="track-icon">↗</div>
+          <div>
+            <span>项目实战</span>
+            <h3>让灵感真正上线</h3>
+            <p>从需求、开发到展示，用完整项目练技术，也练协作与表达。</p>
+          </div>
+          <b>IDEA / BUILD / SHIP</b>
+        </article>
+        <article class="track-card reveal" data-symbol="04">
+          <div class="track-icon">◎</div>
+          <div>
+            <span>分享成长</span>
+            <h3>找到同频的伙伴</h3>
+            <p>技术分享、经验交流、学长学姐答疑。一个人走得快，一群人走得更远。</p>
+          </div>
+          <b>SHARE / LINK / GROW</b>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading gallery-heading reveal">
+        <p>荣誉缓存 / ACHIEVEMENTS</p>
+        <h2>奖状会褪色，<br>实力一直更新。</h2>
+        <div class="gallery-hint"><span>真实成果</span><i>× 19</i></div>
+      </div>
+      <div class="competition-map reveal" aria-label="参赛项目">
+        <p>COMPETITION MATRIX / 赛事矩阵</p>
+        <ul>
+          <li><i>01</i>蓝桥杯全国软件和信息技术专业人才大赛</li>
+          <li><i>02</i>中国大学生计算机设计大赛</li>
+          <li><i>03</i>iCAN 大学生创新创业大赛</li>
+          <li><i>04</i>全球校园人工智能算法精英大赛</li>
+          <li><i>05</i>中国青年科技创新“揭榜挂帅”擂台赛</li>
+          <li><i>06</i>C 程序设计大赛</li>
+        </ul>
+      </div>
+      <figure class="award-film reveal" id="award-film">
+        <video id="award-showreel" playsinline preload="metadata" poster="assets/award-14.webp" aria-label="程序员之家历年获奖成果十一秒速览">
+          <source src="assets/awards-showreel.mp4" type="video/mp4">
+          当前浏览器无法播放荣誉展示视频。
+        </video>
+        <div class="film-shade" aria-hidden="true"></div>
+        <div class="film-status" aria-hidden="true">
+          <span><i></i> ACHIEVEMENT STREAM</span>
+          <b>00:11</b>
+        </div>
+        <figcaption>
+          <span>HONORS IN MOTION</span>
+          <strong>11 秒荣誉速览</strong>
+          <small>点击播放 · 含音效，完整奖状在下方。</small>
+        </figcaption>
+        <button class="film-control" id="award-film-control" type="button" aria-label="播放含音效的十一秒荣誉速览">
+          <span aria-hidden="true">▶</span> PLAY + AUDIO
+        </button>
+        <div class="film-progress" aria-hidden="true"><span id="award-film-progress"></span></div>
+      </figure>
+      <div class="award-stage reveal">
+        <button class="rail-control rail-prev" type="button" aria-label="查看前一组奖状" aria-controls="award-rail">←</button>
+        <div class="award-rail" id="award-rail" tabindex="0" aria-label="社团荣誉证书画廊，可横向滑动">
+          <figure class="award-card portrait">
+            <img src="assets/award-01.webp" alt="全球校园人工智能算法精英大赛三等奖证书" loading="lazy">
+            <figcaption><span>AICOMP</span>人工智能算法精英大赛 · 三等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-02.webp" alt="中国青年科技创新揭榜挂帅擂台赛二等奖证书" loading="lazy">
+            <figcaption><span>CHALLENGE CUP</span>“揭榜挂帅”擂台赛 · 二等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-03.webp" alt="iCAN大学生创新创业大赛三等奖证书" loading="lazy">
+            <figcaption><span>ICAN</span>大学生创新创业大赛 · 三等奖</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-04.webp" alt="蓝桥杯获奖证书一" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 01</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-05.webp" alt="蓝桥杯获奖证书二" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 02</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-06.webp" alt="蓝桥杯获奖证书三" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 03</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-07.webp" alt="蓝桥杯获奖证书四" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 04</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-08.webp" alt="中国大学生计算机设计大赛特等奖证书" loading="lazy">
+            <figcaption><span>4C</span>计算机设计大赛 · 特等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-09.webp" alt="中国大学生计算机设计大赛一等奖证书" loading="lazy">
+            <figcaption><span>4C</span>计算机设计大赛 · 一等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-10.webp" alt="中国大学生计算机设计大赛二等奖证书" loading="lazy">
+            <figcaption><span>4C</span>计算机设计大赛 · 二等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-11.webp" alt="中国大学生计算机设计大赛三等奖证书" loading="lazy">
+            <figcaption><span>4C</span>计算机设计大赛 · 三等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-12.webp" alt="中国大学生计算机设计大赛全国二等奖奖牌" loading="lazy">
+            <figcaption><span>NATIONAL</span>计算机设计大赛 · 全国二等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-13.webp" alt="第十八届中国大学生计算机设计大赛三等奖证书" loading="lazy">
+            <figcaption><span>4C 2025</span>计算机设计大赛 · 三等奖</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-14.webp" alt="第十九届中国大学生计算机设计大赛二等奖证书" loading="lazy">
+            <figcaption><span>4C 2026</span>计算机设计大赛 · 二等奖</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-15.webp" alt="蓝桥杯获奖证书五" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 05</figcaption>
+          </figure>
+          <figure class="award-card">
+            <img src="assets/award-16.webp" alt="常州工学院第十一届C程序设计大赛组织奖证书" loading="lazy">
+            <figcaption><span>C PROGRAMMING</span>C 程序设计大赛 · 组织奖</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-17.webp" alt="蓝桥杯获奖证书六" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 06</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-18.webp" alt="蓝桥杯获奖证书七" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 07</figcaption>
+          </figure>
+          <figure class="award-card portrait">
+            <img src="assets/award-19.webp" alt="蓝桥杯获奖证书八" loading="lazy">
+            <figcaption><span>LANQIAO CUP</span>蓝桥杯 · 省级荣誉 08</figcaption>
+          </figure>
+        </div>
+        <button class="rail-control rail-next" type="button" aria-label="查看后一组奖状" aria-controls="award-rail">→</button>
+      </div>
+      <div class="rail-meta reveal">
+        <div class="rail-progress"><span id="rail-progress"></span></div>
+        <span><b id="rail-index">01</b> / 19</span>
+        <p>拖动 · 滚轮 · 方向键</p>
+      </div>
+    </section>
+
+    <section class="join section" id="join">
+      <div class="join-panel reveal">
+        <div class="join-copy">
+          <p>JOIN THE BUILD</p>
+          <h2>下一段高光，<br>等你来写。</h2>
+          <span>无论你刚开始学，还是已经想做点大的，这里都有人与你并肩。</span>
+        </div>
+        <div class="join-qr">
+          <div class="qr-frame">
+            <img src="assets/recruit-group.png" alt="26级程序员之家招新群二维码，群号 1109824418" loading="eager">
+            <span class="qr-corner qr-corner-a"></span>
+            <span class="qr-corner qr-corner-b"></span>
+            <span class="qr-corner qr-corner-c"></span>
+            <span class="qr-corner qr-corner-d"></span>
+          </div>
+          <div class="qr-meta">
+            <span><i></i> SCAN TO JOIN</span>
+            <b>26级程序员之家招新群</b>
+            <small>群号：1109824418</small>
+          </div>
+        </div>
+      </div>
+      <div class="contact-strip reveal">
+        <span>程序员之家</span>
+        <b>代码 · 技术 · 分享 · 成长</b>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 PROGRAMMER'S HOME</span>
+    <span>BUILD SOMETHING THAT MATTERS.</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">已进入全屏演示 · 按 Esc 退出</div>
+  <script src="script.js"></script>
+</body>
+</html>
